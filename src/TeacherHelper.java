@@ -13,11 +13,11 @@ public class TeacherHelper {
 		Scanner leitor = new Scanner(System.in);
 		
 		while(opcao!=4) {
-			System.out.println("FERRAMENTA DE AUX�LIO AO PROFESSOR!");
-			System.out.println("Selecione a op��o desejada:");
-			System.out.println("1 - Calcular sal�rio");
-			System.out.println("2 - Calcular m�dia de notas dos alunos");
-			System.out.println("3 - Exibir a motiva��o do dia!");
+			System.out.println("FERRAMENTA DE AUXÍLIO AO PROFESSOR!");
+			System.out.println("Selecione a opção desejada:");
+			System.out.println("1 - Calcular salário");
+			System.out.println("2 - Calcular média de notas dos alunos");
+			System.out.println("3 - Exibir a motivação do dia!");
 			System.out.println("4 - Sair do sistema");
 			opcao = leitor.nextInt();
 			
@@ -59,6 +59,10 @@ public class TeacherHelper {
 			case 3:
 				
 				switch(gerador.nextInt(7)) {
+				case 0:
+					System.out.println("Que seus alunos não durmam!");
+					break;
+				
 				case 1:
 					System.out.println("Voc� � um professor incr�vel!");
 					break;
